@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This README provides step-by-step instructions on how to host a resume on GitHub Pages. By following these instructions, you'll be able to showcase your resume online using GitHub's free hosting service.
+This guide provides step-by-step instructions on how to host a resume on GitHub Pages, based on the process described in Modern Technical Writing by Andrew Etter. By following these instructions, you'll be able to showcase your resume online using GitHub's free hosting service.
 
 ## Prerequisites
 
@@ -73,6 +73,8 @@ plugins:
 
 ### Access Your Hosted Resume
 
+- Navigate to the *Actions* tab across the top
+- 
 - Once GitHub Pages is enabled, you'll see a box with a link to your hosted site.
 - Click on the **Visit site** link to view your resume online.
 
