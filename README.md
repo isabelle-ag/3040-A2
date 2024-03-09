@@ -14,42 +14,73 @@ Before you begin, ensure you have the following:
 
 ## Instructions
 
-### 1. Go to GitHub
+### Go to GitHub
 
 - Open GitHub at [github.com](https://github.com).
-- If not logged in, log in to your account.
+- If not already logged in, log in to your account.
 
-### 2. Create a New Repository
+### Create a New Repository
 
 - Click on the **+** icon in the top-right corner of the GitHub webpage and select *New repository*.
-- Choose a name for your repository (e.g., "resume"). He should be calling it explictly `YourGitHubName/YourGitHubName.github.io`.
+- Name your repository *<yourgithubname>.github.io*, putting your username in the placeholder.
+  
+  `*Important:* Convert any uppercase letters in your username to lowercase`
 - Make sure the repository is set to public.
-> You should add the click on add a readme because github get funny if you dont
+- Check the **Initialize this repository with a with README** option.
 - Click on the **Create Repository** button.
 
-### 3. Upload Your Resume
+### Upload Your Resume
 
-- Inside(what does inside mean) your new repository, click on the **Add file** button and select **Upload files**.
-- Choose your Markdown-formatted resume file from your computer and upload it to the repository.
+- You should now be in your new repository's main page, containing only a README.md file.
+- To upload a file, click on the **+** button, located in between the *Go to file* and *<> Code* buttons.
+- Click *Upload files*.
+- Click on the *choose your files* option.
+- Navigate to the location of your resume and click upload.
+- Write a meaningful commit message, for example: *Upload index.md*
 
-### 4. Enable GitHub Pages
+### Add Configurations
 
-- Navigate to the **Settings** tab of your repository.
-- Scroll down to the  **Pages** section.
-- Under **Source**, select **main** or **master** branch.
+- In order to choose a theme, we need to add a configuration file.
+- From the *Code* page of your repository, click on the same **+** button you used to upload your resume.
+- Select *Create new file*.
+- At the top of the page, name the file *_config.yml*
+- Paste the following into the body of the file:
+
+```md
+title: <Full Name>
+description: 
+remote_theme: pages-themes/tactile@v0.2.0
+plugins:
+- jekyll-remote-theme
+```
+
+- Put your full name in the title field.
+- Optional: The description field is optional. If you choose to use it, you can put anything there. I recommend having your contact information there. I put *<email> | <github link>*,
+- Click on the *Commit changes...* button in the top right of the page
+- Write a meaningful commit message, like *Create _config.yml* and click commit.
+
+  ---
+
+### Enable GitHub Pages
+
+- Navigate to the **Settings** tab of your repository, on the top right.
+- Under the **Code and automation** section on the left, click **Pages**
+- Under **Source**, select **Deploy from a branch**.
+- Under **Branch**, select **Main** and **/(root)**
 - Click on **Save**.
 
-### 5. Access Your Hosted Resume
+--- 
 
-- Once GitHub Pages is enabled, you'll see a green box with a link to your hosted site.
-- Click on the provided link to view your resume online.
+### Access Your Hosted Resume
+
+- Once GitHub Pages is enabled, you'll see a box with a link to your hosted site.
+- Click on the **Visit site** link to view your resume online.
 
 ## More Resources
 
 - [Markdown Tutorial](https://www.markdowntutorial.com/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Etter's Modern Technical Writing](https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
-> I would add more references because Frank is a newbie
 
 ## FAQs
 
